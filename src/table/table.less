@@ -1,14 +1,36 @@
+@font-color:#404040;
+@border-color:#dfdfdf;
+@table-header-color:#a6a6a6;
 .show-table{
     color: #000000;
-    border-collapse: separate;
+    border-collapse: collapse;
     font-size: 12px;
+    border-width:1px 0 0  1px;
+    border-style: solid;
+    border-color: @border-color;
     tbody>tr{
         height:25px;
+        margin: 0;
         td{
             border-width: 0 1px 1px 0;
-            border-style: dotted;
+            border-style: solid;
+            border-color: @border-color;
+            color:@font-color;
             margin: 0;
             padding: 0;
         }
+
     }
+}
+
+.show-table-header>.show-table{
+    tbody>tr{
+        td{
+            color: @table-header-color;
+        }
+    }
+}
+
+.show-table-body>.show-table{
+    border-top:0;
 }

@@ -1,1 +1,1 @@
-export {default} from './table.r'
+export {default} from './Table.tsx'

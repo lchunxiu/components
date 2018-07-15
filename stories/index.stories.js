@@ -6,8 +6,6 @@ import { linkTo } from '@storybook/addon-links';
 
 import { Button, Welcome } from '@storybook/react/demo';
 
-import Table from '../src/table'
-
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
@@ -19,5 +17,3 @@ storiesOf('Button', module)
       </span>
     </Button>
   ));
-
-storiesOf('Table',module).add('simple',()=><Table/>)
